@@ -1,0 +1,43 @@
+body{
+	background-image: url('../images/back-ground.jpeg');
+}
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+img{
+	width: 120px; 
+   	margin-bottom: 15px; 
+   	/*YOUR CODE HERE*/
+   	display: block;
+   	margin-left: auto;
+   	margin-right: auto;
+}
+
+div{
+	padding: 30px; 
+   	margin:5px; 
+   	/* YOUR CODE HERE */
+   	text-align: center;
+}
+
+#mystuff{
+	display: grid;
+   	grid-template-columns: 1fr 1fr;
+   	grid-template-rows: repeat(5, 1fr);
+}
+
+@media screen and (min-width: 850px){
+
+	#mystuff{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	#mystuff div:nth-child(even){
+		border: 1px solid black;
+	}
+
+}
